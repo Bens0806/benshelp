@@ -12,9 +12,50 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title> Ben's Help</title>
 </head>
-
 <body>
 
+<!-- ##################################################################################################################-->
+    <!-- Start: Header -->
+    <header>
+        <!-- Start: Navbar -->
+        <nav class="navbar navbar-expand-lg bg-nav-custom navbar-light fixed-top">
+            <div class="container-fluid container-lg">
+                <!-- Start: LogoNavbar -->
+                <a href="#" class="navbar-brand">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51"
+                        height="44" viewBox="0 0 51 44">
+                        <image id="lgoo-eb-light" width="51" height="44"
+                            xlink:href="data:img/png;base64,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" />
+                    </svg>
+
+                </a>
+                <!-- End: LogoNavbar -->
+                <!-- Start: Button Menu Responsive -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- End: Button Menu Responsive -->
+                <!-- Start: Link Nav -->
+                <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Acceuil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Nos Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Vos Aides</a></li>
+                    </ul>
+                    <button class="btn btn-cn-bg me-2">Simulation En ligne</button>
+                    <button class="btn btn-cn-bg">Contactez-nous</button>
+                    <!-- End: Link Nav -->
+                </div>
+            </div>
+        </nav>
+        <!-- End: Navbar -->
+    </header>
+    <!-- End: Header -->
+    <!-- 
+    ###################################################################################################################
+-->
 </body>
 <!-- BOOSTRAP JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
