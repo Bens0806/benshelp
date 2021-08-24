@@ -5,6 +5,18 @@ body {
 
 }
 
+/* start: css global */
+
+.opacity-04 {
+    opacity: 0.4;
+}
+
+.bg-202020 {
+    background-color: #202020;
+}
+
+/* end: css global */
+
 /* start: style navbar */
 
 .navbar-light .navbar-nav .nav-link {
@@ -48,3 +60,20 @@ nav button.navbar-toggler {
 }
 
 /* end: style navbar */
+/* Start: style banner */
+
+
+.bg-banner{
+    background-color: #202020;
+    background: url(../img/bg-banner.jpg);
+    background-size: cover;
+    opacity: 1;
+    background-attachment: fixed;}
+
+.point {
+    background: url(../img/point.png)repeat 0px 0px;
+    background-size: 6px;
+    opacity: 1;
+}
+
+/* end: style banner */
