@@ -15,6 +15,13 @@ body {
     background-color: #202020;
 }
 
+.text-52b5af {
+    color: #52b5af;
+}
+.fs-3rem {
+    font-size: 3rem;
+}
+
 /* end: css global */
 
 /* start: style navbar */
@@ -77,3 +84,30 @@ nav button.navbar-toggler {
 }
 
 /* end: style banner */
+
+/* start: style cards */ 
+.card-size {
+    width: auto;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: center;
+}
+
+.shadow-card {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.45)!important;
+    transition: 0.6s;
+}
+
+.shadow-card:hover {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+.anim-text-hover {
+    transition: 0.5s;
+}
+.anim-text-hover:hover {
+    transition: 0.8s;
+    font-size: 1.06em;
+}
+/* end: style cards */
